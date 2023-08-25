@@ -1,0 +1,25 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Chevron">
+<g id="g8292">
+<g id="g8294">
+<path id="path8296" d="M8.00023 11.7089L1.86523 5.57385L3.15005 4.28906L8.00023 9.13924L12.8504 4.28906L14.1352 5.57385L8.00023 11.7089Z" fill="#B9BBC5"/>
+</g>
+<g id="g8298">
+<g id="Clip path group">
+<mask id="mask0_827_7143" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="1" width="14" height="14">
+<g id="clipPath8304">
+<path id="path8302" d="M14.6663 1.33057L14.6663 14.6639L1.33301 14.6639L1.33301 1.33057L14.6663 1.33057Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_827_7143)">
+<g id="g8300">
+<g id="g8306">
+<path id="path8308" d="M8.00023 11.7069L1.86523 5.5719L3.15005 4.28711L8.00023 9.13729L12.8504 4.28711L14.1352 5.5719L8.00023 11.7069Z" stroke="#B9BBC5" stroke-width="0.78125" stroke-miterlimit="10"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

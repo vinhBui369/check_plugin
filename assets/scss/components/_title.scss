@@ -1,0 +1,82 @@
+.tw-title {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'SVN-Gilroy', sans-serif;
+        font-weight: 600;
+        color: #121317;
+        width: fit-content;
+    }
+
+    h1 {
+        font-size: 58px;
+        line-height: 124.138%;
+        letter-spacing: 0.29px;
+    }
+
+    h2 {
+        font-size: 46px;
+        line-height: 121.739%;
+        letter-spacing: 0.23px;
+
+        @include mediaMaxWidth(1024px) {
+            font-size: 40px;
+        }
+
+        @include mediaMaxWidth(576px) {
+            font-size: 36px;
+        }
+    }
+
+    h3 {
+        font-size: 36px;
+        line-height: 133.333%;
+        letter-spacing: 0.18px;
+    }
+
+    h4 {
+        font-size: 30px;
+        line-height: 133.333%;
+        letter-spacing: 0.15px;
+    }
+
+    h5 {
+        font-size: 24px;
+        line-height: 133.333%;
+        letter-spacing: 0.12px;
+    }
+
+    h6 {
+        font-size: 18px;
+        line-height: 133.333%;
+        letter-spacing: 0.09px;
+    }
+
+    &.title-yellow {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #EEA32C;
+        }
+    }
+
+    &.title-white {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #fff;
+        }
+    }
+}

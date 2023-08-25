@@ -1,0 +1,20 @@
+.tw-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+
+    .tw-cover {
+        padding: 0 percentage($number: 80/1440);
+        width: 100%;
+
+        @include MB {
+            padding: 0 30px;
+        }
+
+        @include MB576 {
+            padding: 0 20px;
+        }
+
+    }
+
+}

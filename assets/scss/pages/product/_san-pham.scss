@@ -1,0 +1,190 @@
+.page_product {
+
+
+    .lists_products .item_product {
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+
+
+        .content {
+            padding: 60px 0;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: percentage($number: 840/1280);
+                height: 100%;
+                z-index: 1;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+
+                @include mediaMaxWidth (820px) {
+                    display: none;
+                }
+            }
+
+            @include mediaMaxWidth (820px) {
+                flex-direction: column;
+            }
+
+            @include mediaMaxWidth (576px) {
+                padding: 30px 0;
+            }
+        }
+
+        .content .slide-l {
+            width: percentage($number: 632/1280);
+            position: relative;
+            z-index: 4;
+
+            .swiper-slide {
+                display: flex;
+                border-radius: 16px;
+                @include aspect-ratio(632, 356);
+
+                img {
+                    object-fit: cover;
+                    border-radius: 16px;
+                }
+            }
+
+
+
+            @include mediaMaxWidth (820px) {
+                width: 70%;
+            }
+
+            @include mediaMaxWidth (576px) {
+                width: 100%;
+            }
+        }
+
+        .content .text_contetnt-r {
+            position: relative;
+            z-index: 3;
+
+            .tw-title h2 {
+                margin-bottom: 16px;
+                @include wordBreak(2, auto);
+
+                @include mediaMaxWidth (576px) {
+                    font-size: 30px;
+
+                    br {
+                        display: none
+                    }
+                }
+            }
+
+            .wp_content {
+                @include wordBreak(4, auto);
+                letter-spacing: 0.075px;
+            }
+
+            .tw-button {
+                margin-top: 24px;
+            }
+
+            @include mediaMaxWidth (820px) {
+                margin-top: 30px;
+                padding: 50px 25px;
+            }
+
+
+
+        }
+
+        &:nth-of-type(1n) {
+            background-image: url('../main/assets/images/products/background_product_item.png');
+            padding: 80px 0;
+
+            @include mediaMaxWidth (820px) {
+                padding: 0;
+            }
+
+            .content {
+                .text_contetnt-r {
+                    order: 1;
+                    width: percentage($number: 580/1280);
+                    padding-right: percentage($number: 60/1280);
+
+                    @include mediaMaxWidth (820px) {
+                        width: 100%;
+                        background-image: url('../main/assets/images/products/decor_text-r.png');
+                    }
+                }
+
+                &::after {
+                    right: 0;
+                    background-image: url('../main/assets/images/products/decor_text-r.png');
+
+                }
+
+
+
+            }
+        }
+
+        &:nth-of-type(2n) {
+            background-image: url('../main/assets/images/products/background_product_item2.png');
+
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-image: url('../main/assets/images/products/decor.png');
+                z-index: 2;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .content {
+
+                .slide-l {
+                    order: 2;
+
+                    @include mediaMaxWidth (820px) {
+                        order: 1;
+                    }
+                }
+
+                .text_contetnt-r {
+                    order: 1;
+                    width: percentage($number: 578/1280);
+                    padding-left: percentage($number: 54/1280);
+                    padding-right: 0;
+
+                    @include mediaMaxWidth (820px) {
+                        width: 100%;
+                        background: linear-gradient(90deg, #393b46, rgba(57, 59, 70, .75) 66.46%);
+                        order: 1;
+                        padding: 50px 25px;
+                    }
+
+                    .tw-title h2,
+                    .wp_content {
+                        color: #fff;
+                    }
+
+                }
+
+
+                &::after {
+                    left: 0;
+                    background: linear-gradient(90deg, #393B46 0%, rgba(57, 59, 70, 0.75) 66.46%);
+                }
+            }
+        }
+    }
+
+
+}

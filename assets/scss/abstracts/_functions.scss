@@ -1,0 +1,6 @@
+@function p($size) {
+  @return ($size/1440 * 100vw);
+}
+@function tablet($size) {
+  @return ($size/1024 * 100vw);
+}

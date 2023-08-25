@@ -1,0 +1,382 @@
+.menu_footer {
+    padding: 31px 0 32px;
+    border-top: 1px solid #EDEDED;
+
+    @include mediaMaxWidth(1024px) {
+        display: none;
+    }
+
+    .footer_logo {
+        width: percentage($number: 200/1280);
+    }
+
+    .footer_menu {
+        width: percentage($number: 752/1280);
+
+        @include mediaMaxWidth(1366px) {
+            width: 68%;
+        }
+
+
+        li {
+            margin-right: percentage($number: 24/752);
+            color: #121317;
+            font-family: "SVN-Gilroy";
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 160%;
+            letter-spacing: 0.075px;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                color: #eea32c;
+            }
+        }
+    }
+
+
+
+
+
+
+}
+
+.footer-main {
+
+    position: relative;
+    background-color: #393B46;
+    padding: 40px 0 24px 0;
+
+    @include mediaMaxWidth(1024px) {
+        padding: 0;
+
+        .tw-cover {
+            padding: 0;
+        }
+    }
+
+
+    &-l {
+        width: percentage($number: 834/1440);
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: inline-flex;
+
+        @include mediaMaxWidth(1024px) {
+            display: none;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .footer-content {
+        @include mediaMaxWidth(1024px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    .footer-content-l {
+        width: percentage($number: 524/1280);
+        position: relative;
+        z-index: 2;
+
+        @include mediaMaxWidth(1024px) {
+            width: 50%;
+            background-image: url("../main/assets/images/home/Footer-l-1024.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: #eca83f;
+            padding: 30px;
+        }
+
+        @include mediaMaxWidth(820px) {
+            width: 100%;
+        }
+
+        @include MB576 {
+            padding: 30px 20px 0;
+        }
+
+        .drop-down {
+            border-radius: 8px;
+            background: #FFF;
+            padding: 8px percentage($number: 14/524) 8px percentage($number: 16/524);
+            width: percentage($number: 362/524);
+            margin-bottom: 24px;
+            position: relative;
+
+            color: #818498;
+            font-family: "SVN-Gilroy";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 160%;
+            letter-spacing: 0.075px;
+
+            &::before {
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                right: percentage($number: 14/524);
+                top: 50%;
+                transform: translateY(-50%);
+                background-image: url("../main/assets/images/home/Chevron.svg");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                content: "";
+            }
+
+            @include mediaMaxWidth(820px) {
+                width: 50%;
+            }
+
+            @include mediaMaxWidth(576px) {
+                width: 100%;
+            }
+
+        }
+
+        .info {
+            padding-bottom: 16px;
+
+
+        }
+
+        .info .name {
+            color: var(--gray-10, #121317);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 133.333%;
+            letter-spacing: 0.09px;
+            margin-bottom: 16px;
+        }
+
+        .info .address {
+            color: #22242A;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 160%;
+            letter-spacing: 0.075px;
+            margin-bottom: 8px;
+
+            .icon {
+                margin-right: 8px;
+            }
+
+            .item_phone:first-child {
+                margin-right: 24px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .social_network {
+            padding-top: 16px;
+            border-top: 1px solid rgba(18, 19, 23, 0.2);
+
+            li {
+                margin-right: 16px;
+            }
+
+            @include mediaMaxWidth(820px) {
+                display: none;
+            }
+
+        }
+    }
+
+    .footer-content-r {
+        width: percentage($number: 632/1280);
+        position: relative;
+        z-index: 3;
+
+
+
+        @include mediaMaxWidth(1024px) {
+            width: 50%;
+            padding: 30px;
+        }
+
+
+        @include mediaMaxWidth(820px) {
+            width: 100%;
+        }
+
+        @include MB576 {
+            padding: 30px 20px 20px 20px;
+        }
+
+        .title_form {
+            color: #FFF;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            letter-spacing: 2.25px;
+            text-transform: uppercase;
+            text-align: right;
+            margin-bottom: 24px;
+
+            @include mediaMaxWidth(576px) {
+                text-align: left;
+            }
+        }
+
+        .form-column:first-child {
+            margin-bottom: 16px;
+
+            @include mediaMaxWidth(576px) {
+                margin-bottom: 0;
+            }
+
+        }
+
+        .form-group {
+            width: percentage($number: 308/632);
+
+            @include mediaMaxWidth(576px) {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            input,
+            select {
+                width: 100%;
+                padding: 8px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #fff;
+
+                color: #D5D6DD;
+                font-family: "SVN-Gilroy";
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 160%;
+                letter-spacing: 0.075px;
+            }
+
+            option {
+                background-color: #393b46;
+                color: #D5D6DD;
+            }
+
+
+        }
+
+        .tw-button {
+            margin-left: auto;
+
+            button {
+                margin: 24px 0 27px 0;
+                background-color: transparent;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                svg path {
+                    transition: .3s ease-in-out;
+                }
+
+                &:hover {
+                    background-color: #eea32c;
+                    color: #fff;
+
+                    svg path {
+                        fill: #fff;
+                    }
+                }
+            }
+
+            @include mediaMaxWidth(576px) {
+                margin-left: 0;
+
+            }
+        }
+
+        .copyright {
+            justify-content: right;
+            position: relative;
+
+            @include mediaMaxWidth(576px) {
+                justify-content: left;
+                position: relative;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        .copyright p,
+        .copyright a {
+            color: #9DA0AF;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 166.667%;
+            letter-spacing: 0.12px;
+        }
+
+        .copyright a {
+            padding-left: 12px;
+            margin-left: 12px;
+            border-left: 1px solid #9DA0AF;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            @include mediaMaxWidth(576px) {
+                border: none;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+
+        @include mediaMaxWidth(576px) {
+            .copyright p {
+                margin: 15px 0;
+            }
+        }
+
+        .social_network {
+            display: none;
+
+            @include mediaMaxWidth(820px) {
+                display: flex;
+                position: absolute;
+                left: 0;
+
+                a {
+                    border: none;
+
+                    svg>path {
+                        fill: #fff;
+                    }
+                }
+
+                li:first-child a {
+                    padding-left: 0;
+                    margin-left: 0;
+                }
+            }
+
+            @include mediaMaxWidth(576px) {
+                position: relative;
+                left: unset;
+            }
+        }
+    }
+
+}

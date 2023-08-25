@@ -1,0 +1,42 @@
+@include keyframes(spinAround) {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn)
+    }
+
+}
+
+/* anmation for section 5 page home */
+
+@keyframes circle_1_ScaleUp {
+    75% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(25);
+    }
+}
+
+@keyframes slide-progress {
+    0% {
+        transform: translateX(-100%);
+        // width: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        // width: 100%;
+    }
+}

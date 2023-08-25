@@ -1,0 +1,39 @@
+{
+  "name": "core-theme",
+  "slug": "core-theme",
+  "version": "1.0.0",
+  "description": "Just a theme",
+  "homepage": "https://banvwp.com/",
+  "author": "Nguyenba",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cli": "^1.4.3",
+    "grunt-cssnano": "^3.0.0",
+    "node-sass": "^8.0.0",
+    "wow.js": "^1.2.2"
+  },
+  "devDependencies": {
+    "@wordpress/browserslist-config": "^2.7.0",
+    "autoprefixer": "^9.8.8",
+    "browserslist": "^4.21.9",
+    "cssnano": "^4.1.11",
+    "grunt": "^1.6.1",
+    "grunt-checktextdomain": "^1.0.1",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify-es": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^3.1.0",
+    "grunt-text-replace": "^0.4.0",
+    "grunt-wp-readme-to-markdown-with-extra": "^2.2.0",
+    "load-grunt-tasks": "^5.1.0",
+    "matchdep": "^2.0.0"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
+  "scripts": {
+    "start": "grunt"
+  }
+}

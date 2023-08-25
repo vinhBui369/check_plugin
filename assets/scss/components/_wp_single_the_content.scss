@@ -1,0 +1,49 @@
+.wp_single_the_content {
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin-top: 48px;
+        margin-bottom: 36px;
+        color: #121317;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 133.333%;
+        letter-spacing: 0.15px;
+
+        @include mediaMaxWidth(820px) {
+            margin: 30px 0;
+            font-size: 20px;
+        }
+
+        @include mediaMaxWidth(576px) {
+            margin: 30px 0;
+            font-size: 16px;
+        }
+    }
+
+
+
+    ul,
+    ul li {
+        list-style: inside;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .wp-block-image img,
+    p img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    p,
+    ul {
+        margin-bottom: 24px;
+    }
+}

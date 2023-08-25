@@ -1,0 +1,10 @@
+.container{
+    width: 100%;
+    padding: 0 p(120);
+    @media (max-width: 768px){
+        padding: 0 30px;
+    }
+    @include MB576{
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,23 @@
+a.tw-tag {
+    border-radius: 21px;
+    background: #FDF6EA;
+    padding: 4px 16px;
+    display: block;
+    width: fit-content;
+    color: #EEA32C;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.075px;
+    transition: .3s ease-in-out;
+
+    margin: 0 12px 15px 0;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: #EEA32C;
+        color: #fff;
+    }
+}

@@ -1,0 +1,89 @@
+.tw-button {
+  width: fit-content;
+
+  a,
+  button {
+    border: 1px solid transparent;
+    padding: 12px 24px;
+    font-family: "SVN-Gilroy";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 133.333%;
+    letter-spacing: 0.09px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    span {
+      margin-right: 12px;
+    }
+
+    svg path {
+      transition: 0.3s ease-in-out;
+    }
+
+    @include mediaMaxWidth(576px) {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+
+  button {
+    background-color: transparent;
+  }
+
+  &.border-yellow {
+    a,
+    button {
+      border-color: #eea32c;
+      color: #eea32c;
+
+      &:hover {
+        background-color: #eea32c;
+        color: #fff;
+
+        svg path {
+          fill: #fff;
+        }
+      }
+    }
+
+    svg path {
+      fill: #eea32c;
+    }
+  }
+
+  &.border-gray {
+    a,
+    button {
+      border-color: #d5d6dd;
+      color: #d5d6dd;
+    }
+
+    svg path {
+      fill: #d5d6dd;
+    }
+  }
+
+  &.border-white {
+    a,
+    button {
+      border-color: #fff;
+      color: #fff;
+
+      &:hover {
+        border-color: #eea32c;
+        color: #eea32c;
+
+        svg path {
+          fill: #eea32c;
+        }
+      }
+    }
+
+    svg path {
+      fill: #fff;
+    }
+  }
+}

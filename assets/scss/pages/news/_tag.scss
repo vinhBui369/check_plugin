@@ -1,0 +1,48 @@
+.news-tags {
+    .list_news_posts {
+        padding-top: 10px;
+    }
+
+    .footer_tag {
+        margin-top: 80px;
+        color: #121317;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 133.333%;
+        letter-spacing: 0.12px;
+        padding-top: 24px;
+        border-top: 1px solid #818498;
+
+        @include mediaMaxWidth(1024px) {
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+
+        p {
+            width: 20%;
+
+            @include mediaMaxWidth(1024px) {
+                width: 100%;
+            }
+        }
+
+        .tags {
+            width: 78%;
+
+            gap: 15px;
+
+            a {
+                margin-bottom: 0;
+            }
+
+            @include mediaMaxWidth(1024px) {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+        }
+    }
+
+
+}

@@ -1,0 +1,362 @@
+.single_product {
+  .slide_content {
+    background-image: url("../main/assets/images/products/decor_single.png"),
+      linear-gradient(0deg,
+        rgba(250, 227, 192, 0.3) 0%,
+        rgba(255, 255, 255, 0) 100%);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 80px 0;
+
+    &_l {
+      width: percentage($number: 794/1280);
+      max-height: 334px;
+
+      @include mediaMaxWidth(1023px) {
+        flex-direction: column;
+      }
+
+      @include mediaMaxWidth(1024px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      #swiper_horizontal {
+        width: percentage($number: 590/794);
+
+        @include mediaMaxWidth(1023px) {
+          width: 100%;
+        }
+
+        .swiper-button-prev {
+          left: 16px;
+        }
+
+        .swiper-button-next {
+          right: 16px;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          width: 40px;
+          height: 40px;
+
+          @include mediaMaxWidth(576px) {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+
+      #swiper_vertical {
+        width: percentage($number: 187/794);
+        height: 100%;
+
+        @include mediaMaxWidth(1023px) {
+          width: 100%;
+          display: none;
+        }
+      }
+
+      #swiper_horizontal,
+      #swiper_vertical {
+        .swiper-slide img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &_r {
+      width: percentage($number: 417/1280);
+
+      .tw-title h2 {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 0.18px;
+        line-height: 133.333%;
+        margin-bottom: 16px;
+
+        @include mediaMaxWidth(820px) {
+          font-size: 28px;
+        }
+      }
+
+      .wp_single_the_content p {
+        margin-bottom: 32px;
+        @include wordBreak(7, auto);
+      }
+
+      @include mediaMaxWidth(1024px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .detail {
+    padding: 124px 0 100px 0;
+    position: relative;
+
+    .decor {
+      background-color: #393b46;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .detail_wrap {
+      background: #fff;
+      background-image: url("../main/assets/images/products/decor_single2.png");
+      background-position: left bottom;
+      background-repeat: no-repeat;
+      background-size: auto;
+      box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.15);
+      padding: 80px percentage($number: 26/1280) 80px percentage($number: 53/1280);
+      position: relative;
+
+      @include mediaMaxWidth(820px) {
+        padding: 40px 15px;
+      }
+
+      .title h3 {
+        color: #eea32c;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0.12px;
+        line-height: 133.333%;
+        margin-bottom: 16px;
+      }
+
+      .title .number {
+        color: #8f621a;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.09px;
+        line-height: 133.333%;
+        margin-right: 16px;
+      }
+
+      .layout {
+        margin-bottom: 36px;
+
+        &.layout_3_images {
+          margin-bottom: 20px;
+        }
+
+        :last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .layout_content {
+        text-align: justify;
+        width: percentage($number: 899/1201);
+
+        @include mediaMaxWidth(820px) {
+          width: 100%;
+        }
+      }
+
+      .layout_3_images .images {
+        margin-left: auto;
+        margin-top: 36px;
+        padding-right: percentage($number: 17/1201);
+        width: percentage($number: 1135/1201);
+
+        @include mediaMaxWidth(820px) {
+          width: 100%;
+          padding: 0;
+          flex-direction: column;
+        }
+
+        .item_wrap {
+          width: calc((100% / 3) - 16px);
+          margin: 0 percentage($number: 16/1135) 16px 0;
+
+          &:nth-of-type(3n) {
+            margin-right: 0;
+          }
+
+          @include mediaMaxWidth(820px) {
+            width: 100%;
+            margin-bottom: 24px;
+            text-align: center;
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .detail_form {
+        display: none;
+
+        .row_form_group {
+          margin-bottom: 24px;
+
+          @include mediaMaxWidth(820px) {
+            flex-direction: column;
+            margin: 0;
+          }
+        }
+
+        .sub_title {
+          margin-bottom: 36px;
+        }
+
+        .column-3 .form-group {
+          margin-right: percentage($number: 70/1168);
+          width: percentage($number: 308/1168);
+
+          @include mediaMaxWidth(820px) {
+            width: 100%;
+            margin: 0;
+          }
+        }
+
+        .column-3 .form-group:last-child,
+        .column-2 .form-group:last-child {
+          margin-right: 0;
+          width: percentage($number: 412/1168);
+
+          @include mediaMaxWidth(820px) {
+            width: 100%;
+            margin: 0;
+          }
+        }
+
+        .column-2 .form-group:first-child,
+        .column-1 .form-group {
+          margin-right: percentage($number: 70/1168);
+          width: percentage($number: 685/1168);
+
+          @include mediaMaxWidth(820px) {
+            width: 100%;
+            margin: 0;
+          }
+        }
+
+        .form-group select,
+        .form-group input,
+        .form-group textarea {
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid #b9bbc5;
+          color: #121317;
+          font-family: SVN-Gilroy;
+          font-size: 15px;
+          font-weight: 500;
+          letter-spacing: 0.075px;
+          line-height: 160%;
+          min-height: 40px;
+          padding: 8px;
+          width: 100%;
+
+          &::placeholder {
+            color: #393b46;
+          }
+
+          @include mediaMaxWidth(820px) {
+            margin-bottom: 24px;
+          }
+        }
+
+        .form-group textarea {
+          color: #393b46;
+          max-height: 40px;
+        }
+      }
+
+      &.active_form {
+        background-image: url("../main/assets/images/products/decor_form.png");
+        background-position: right top;
+        background-size: cover;
+        padding: 80px percentage($number: 58/1280) 80px percentage($number: 54/1280);
+
+        @include mediaMaxWidth(576px) {
+          padding: 40px 15px;
+        }
+
+        .content {
+          display: none;
+        }
+
+        .detail_form {
+          display: block;
+        }
+      }
+    }
+
+    .detail_wrap .button-change-layout {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px 12px 0px 0px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform: translateY(-100%);
+      width: percentage($number: 469/1280);
+      z-index: 9;
+
+      @include mediaMaxWidth(1280px) {
+        min-width: 469px;
+      }
+
+      @include mediaMaxWidth(576px) {
+        min-width: unset;
+        width: 100%;
+      }
+
+      a {
+        border-radius: 12px 12px 0px 0px;
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.09px;
+        line-height: 133.333%;
+        padding: 12px percentage($number: 24/469);
+        position: relative;
+        transition: 0.3s ease-in-out;
+        width: 50%;
+
+        @include mediaMaxWidth(576px) {
+          padding: 12px 15px;
+          font-size: 15px;
+        }
+
+        @include mediaMaxWidth(375px) {
+          font-size: 14px;
+        }
+
+        &.active,
+        &:hover {
+          background: #eea32c;
+        }
+
+        &::before {
+          background-image: url("../main/assets/images/products/Chevron.svg");
+          content: "";
+          height: 16px;
+          position: absolute;
+          right: percentage($number: 24/469);
+          top: 50%;
+          transform: translateY(-50%);
+          width: 16px;
+
+          @include mediaMaxWidth(576px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .detail_form {}
+  }
+}
