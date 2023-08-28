@@ -1,6 +1,4 @@
 *.DS_Store
-wp-config.php
-.htaccess
 **/node_modules
 sass-cache/**
 node_modules/**
